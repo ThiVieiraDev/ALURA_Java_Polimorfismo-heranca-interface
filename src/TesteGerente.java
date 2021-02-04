@@ -4,7 +4,7 @@ public class TesteGerente {
 
         g1.setNome("Thaiga");
         g1.setCpf("123123123");
-        g1.setSalario(12000.0);
+        g1.setSalario(5000.0);
 
         System.out.println(g1.getNome());
         System.out.println(g1.getBonificacao());
