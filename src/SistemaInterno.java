@@ -1,19 +1,15 @@
-public class SistemaInterno implements Autenticavel{
+public class SistemaInterno {
 
-    private int senha;
+    private int senha = 2222;
 
-    @Override
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
+    public void autentica(Autenticavel fa){
 
-    @Override
-    public boolean autentica(int senha) {
-        if (this.senha == senha){
-            return true;
-        }
-        else {
-            return false;
+        boolean autenticou = fa .autentica(this.senha);
+
+        if(autenticou){
+            System.out.println("Pode entrar no sistema");
+        } else {
+            System.out.println("Não pode entrar no sistema");
         }
     }
 }
