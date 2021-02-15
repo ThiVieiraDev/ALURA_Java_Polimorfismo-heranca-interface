@@ -1,4 +1,4 @@
-public class Cliente implements Autenticavel {
+public class Cliente extends Funcionario implements Autenticavel {
     private int senha;
 
     @Override
@@ -14,5 +14,10 @@ public class Cliente implements Autenticavel {
         else{
             return false;
         }
+    }
+
+    @Override
+    public double getBonificacao() {
+        return 0;
     }
 }
