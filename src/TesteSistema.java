@@ -9,7 +9,10 @@ public class TesteSistema {
         Cliente cliente = new Cliente();
         cliente.setSenha(2233);
 
-//        SistemInterno si = new SistemaInterno();
-//        si.autentica(g)
+        SistemaInterno si = new SistemaInterno();
+//        si.autentica(g);
+//        si.autentica(adm);
+//        si.autentica(cliente);
+
     }
 }
