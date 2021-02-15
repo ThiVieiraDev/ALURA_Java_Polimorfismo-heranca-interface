@@ -1,4 +1,4 @@
-public class Cliente implements Autenticavel {
+public class Administrador extends Funcionario implements Autenticavel{
     private int senha;
 
     @Override
@@ -8,11 +8,16 @@ public class Cliente implements Autenticavel {
 
     @Override
     public boolean autentica(int senha) {
-        if(this.senha == senha){
+        if (this.senha == senha){
             return true;
         }
-        else{
+        else {
             return false;
         }
+    }
+
+    @Override
+    public double getBonificacao() {
+        return 50;
     }
 }
